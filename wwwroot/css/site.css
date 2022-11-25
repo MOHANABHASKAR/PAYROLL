@@ -1,0 +1,114 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+    background-color:lightblue;
+  }
+}
+.display-4{
+    text-emphasis-color:white;
+}
+
+.fgh {
+    background-color: white;
+    padding:
+    4px 7px 2px 4px;
+    border:5px black;
+}
+.ghj{
+    background-color: lightgray;
+   
+}
+.btn btn-secondary{
+    background-color:darkred;
+}
+.textdi{
+    text-decoration-color:white;
+    
+    
+}
+.mainr{
+   
+}
+
+    
+
+
+
+.lkj {
+    background-color: lightgray;
+  
+   
+}
+.navigation{
+    
+    letter-spacing:2px;
+    background-color: darkslategrey;
+}
+.mainr{
+   
+}
+img{
+    display:center;
+    border-image-slice:10%;
+    align-content:center;
+}
+.maindiv{
+   
+
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+th, td {
+    border: 1px solid black;
+    padding:8px;
+}
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    color: #333;
+}
+
+thead {
+    background-color: steelblue;
+    color: white;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+
+
+thead th {
+    width: 25%;
+}
+tbody tr:nth-child(even) {
+    background-color: steelblue;
+}
+tbody tr:nth-child(odd) {
+    background-color: lightsteelblue;
+}
+
+
+tbody th {
+    background-color: #36c;
+    color: #fff;
+    text-align: left;
+}
