@@ -1,0 +1,103 @@
+﻿@page
+@model sample123.Pages.LoginModel
+@{
+    ViewData["Title"] = "PAYROLL";
+}
+
+
+<div class="maindiv" >
+    <form method="post" id="sdf"  >
+        <table>
+            <tr>
+                <td>
+
+
+                    <label for="empid">
+                        employeeid
+                    </label>
+                </td>
+                <td>
+                    <input type="text" asp-for="@Model.userd" name="userid"  required/>                                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">
+                        password
+                    </label>
+                </td>
+
+                <td>
+                    <input id="button" type="password" asp-for="@Model.passd" name="password" required />
+                </td>
+
+            </tr>
+            <tr>
+                <td>submit</td>
+
+                <td>
+
+                    <input type="submit" class="btn btn-primary" asp-page-handler="submit" value="Login" />
+                </td>
+            </tr>
+            <tr>
+                <td>submit</td>
+
+                <td>
+
+                    <input type="submit" style="background-color:darkred" class="btn btn-secondary background-color:red" asp-page-handler="Delete" value="Delete" />
+                </td>
+            </tr>
+        </table>
+
+
+
+    </form>
+</div>
+<br />
+<br />
+
+<caption>EMPLOYEE DETAILS</caption>
+<br />
+<table id="bnm" display:table  coloumn-gap=100px  class="tb" border="5" cellspacing="5" method="Post" ">
+    
+    <thead border="1">
+        <tr  >
+
+            <td>userID<br> </td>
+            <td>position<br> </td>
+            <td>salary<br></td>
+            <td>tax<br></td>
+            <td>totalsalary<br></td>
+
+        </tr>
+        <br>
+    </thead>
+    <tbody >
+        @foreach (var item in @Model.users) 
+                 {
+                 <tr>
+                     <td>@item.userid<vr></vr></td>
+                     <td>@item.position<br /></td>
+                     <td>@item.salary<br></td>
+                     <td>@item.tax<br /></td>
+                     <td>
+                         @Model.totalsalary<br>
+                     </td>
+
+
+                 </tr>
+                 }
+             </tbody>
+         </table>
+
+
+         <br>
+         <br>
+        <button class="fgh" > <a href="/index" padding:6px margin:2px > Logout</a></button>
+
+        <a href="/Add"> ADD</a>
+      
+         
+
+

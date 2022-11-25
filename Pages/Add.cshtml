@@ -1,0 +1,71 @@
+﻿@page
+@model sample123.Pages.AddModel
+@{
+}
+
+<div class="maindiv">
+    <form method="post" id="sdf">
+        <table>
+            <tr>
+                <td>
+
+
+                    <label for="empid">
+                        employeeid
+                    </label>
+                </td>
+                <td>
+                    <input type="text" asp-for="Users.userid"  name="userid" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="position">
+                        position
+                    </label>
+                </td>
+
+                <td>
+                    <input  type="text" asp-for="Users.position" name="position" required />
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+
+
+                    <label for="salary">
+                        salary
+                    </label>
+                </td>
+                <td>
+                    <input type="number" asp-for="Users.salary" name="salary" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+
+                    <label for="tax">
+                        tax
+                    </label>
+                </td>
+                <td>
+                    <input type="number" asp-for="Users.tax" name="tax" required message="this is invalid" />
+                </td>
+            </tr>
+         
+            <tr>
+                <td>submit</td>
+
+                <td>
+
+                    <input type="submit"  class="btn btn-primary" asp-page-handler="Add" value="submit" />
+                </td>
+            </tr>
+        </table>
+
+
+
+    </form>
+    </div>
